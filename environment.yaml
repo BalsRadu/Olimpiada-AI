@@ -1,0 +1,11 @@
+name: OAI
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - jupyter
+      - matplotlib
+      - numpy
+      - pandas

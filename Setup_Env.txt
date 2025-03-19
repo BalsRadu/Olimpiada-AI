@@ -1,0 +1,32 @@
+1) Instalare VS Code
+2) Setup WSL to also learn a bit of linux(OPTIONAL)
+	-> https://www.sitepoint.com/wsl2/
+
+3) Install terminal from Play Store
+4) Install Miniconda
+	-> https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions
+	-> dupa instalare redeschideti terminalul 
+	-> https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+5) Install the python extension
+6) Create folder proiect + navigare in el cu comanda cd
+7) Use code . in that folder
+8) Create a file called env.yaml that contains the following:
+name: OAI
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - jupyter
+    - matplotlib
+    - numpy
+    - pandas
+9) Install the env with the following command(si nu uita sa schimbi env-ul!)
+	->conda env create -f environment.yaml
+	->conda activate OAI
+
+10) Create or open an existin notebook(ends with .ipynb)
+	-> maybe also needs the jupyter extension
+
+11) Click run all in the notebook and choose your env OR you can ctrl + shift + p and type "select interpretor"
