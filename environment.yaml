@@ -13,3 +13,5 @@ dependencies:
       - imageio[ffmpeg]
       - wordcloud
       - lxml
+      - ipyplot
+      - scikit-learn
